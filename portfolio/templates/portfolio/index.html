@@ -1,0 +1,738 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelimalla Tejasai - Advanced Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'portfolio/css/styles.css' %}">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">
+                    <span class="logo-bracket">&lt;</span>
+                    Tejasai
+                    <span class="logo-bracket">/&gt;</span>
+                </span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#achievements" class="nav-link" data-text="Achievements">Achievements</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting fade-in-up">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line fade-in-up" style="animation-delay: 0.2s">Chelimalla</span>
+                    <span class="title-line fade-in-up gradient-text" style="animation-delay: 0.4s">Tejasai</span>
+                </h1>
+                <div class="hero-subtitle fade-in-up" style="animation-delay: 0.6s">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description fade-in-up" style="animation-delay: 0.8s">
+                    Crafting digital experiences through innovative code. Passionate about 
+                    <span class="highlight-text">machine learning</span>, 
+                    <span class="highlight-text">web development</span>, and 
+                    <span class="highlight-text">software engineering</span>.
+                </p>
+                <div class="hero-buttons fade-in-up" style="animation-delay: 1s; display: flex; gap: 15px; align-items: center;">
+    <a href="https://drive.google.com/file/d/154MfV1LQW2D6Ytrrde-RfGYbGBzQxo7I/view?usp=drive_link" 
+       class="btn btn-primary glow-btn" 
+       target="_blank">
+        <span class="btn-text">
+            <i class="fas fa-download"></i>
+            Download Resume
+        </span>
+        <div class="btn-bg"></div>
+    </a>
+
+    <a href="#contact" class="btn btn-secondary glass-btn">
+        <span class="btn-text">
+            <i class="fas fa-paper-plane"></i>
+            Let's Connect
+        </span>
+    </a>
+</div>
+<br>
+                <div class="hero-stats fade-in-up" style="animation-delay: 1.2s">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="275+">0</span>
+                        <span class="stat-label">Problems Solved </span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="93.8">0</span>
+                        <span class="stat-label">CGPA in %</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-right">
+                <div class="floating-card card-1">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-js-alt"></i>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <div class="image-glow"></div>
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="intro-text">
+I am a Computer Science Engineering student with a strong foundation in Python and C, skilled in building full-stack applications using Django. I have hands-on experience in working with both SQL and NoSQL databases, including MySQL and MongoDB, and I actively use Git for version control and collaborative development.
+
+                        </p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-card education-card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3>Education</h3>
+                            </div>
+                            <div class="education-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>B.Tech Computer Science</h4>
+                                        <p>SR University</p>
+                                        <div class="grade-badge">
+                                            <span>CGPA: 9.38/10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Higher Secondary</h4>
+                                        <div class="grade-badge">
+                                            <span>91.6%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-card skills-card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>Technical Skills</h3>
+                            </div>
+                            <div class="skills-container">
+                                <div class="skill-category">
+                                    <h4>Languages</h4>
+                                    <div class="skill-items">
+                                        <div class="skill-item" data-skill="90">
+                                            <span class="skill-name">Python</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item" data-skill="85">
+                                            <span class="skill-name">Java</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item" data-skill="80">
+                                            <span class="skill-name">C/C++</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Web Technologies</h4>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS3</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Django</span>
+                                        <span class="tech-tag">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-card experience-card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <h3>Experience</h3>
+                            </div>
+                            <div class="experience-list">
+                                <div class="experience-item">
+                                    <div class="exp-company">Logic While</div>
+                                    <div class="exp-role">Python Developer Intern</div>
+                                    <div class="exp-duration">2024</div>
+                                </div>
+                                <div class="experience-item">
+                                    <div class="exp-company">NIT Warangal</div>
+                                    <div class="exp-role">Web Developer Intern</div>
+                                    <div class="exp-duration">2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card featured-project">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/chelimallatejasai/Pet-Adoption-and-portal" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/chelimallatejasai/Pet-Adoption-and-portal" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <h3 class="project-title">Pet Adoption & Care Portal</h3>
+                        <p class="project-description">
+                            A comprehensive web platform connecting pet lovers with adoption centers, 
+                            featuring care guides, community support, and real-time chat functionality.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/chelimallatejasai/Movie_Recommendation_system" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/chelimallatejasai/Movie_Recommendation_system" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-film"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-badge">ML</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Pandas</span>
+                        </div>
+                        <h3 class="project-title">Movie Recommendation System</h3>
+                        <p class="project-description">
+                            AI-powered recommendation engine using collaborative filtering 
+                            and content-based algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/chelimallatejasai/Weatherapp" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#https://github.com/chelimallatejasai/Weatherapp class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-badge">API</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">CSS3</span>
+                        </div>
+                        <h3 class="project-title">Weather Forecasting App</h3>
+                        <p class="project-description">
+                            Real-time weather application with location-based forecasts 
+                            and interactive visualizations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/chelimallatejasai/Translator-app" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/chelimallatejasai/Translator-app" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-language"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span class="tech-badge">NLP</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">API</span>
+                        </div>
+                        <h3 class="project-title">Multi-Language Translator</h3>
+                        <p class="project-description">
+                            Advanced translation tool with voice input/output and 
+                            support for 50+ languages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Top 5% Student Recognition</p>
+                    <div class="achievement-year">2024</div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Azure AI Fundamentals</h3>
+                    <p>Microsoft Certification</p>
+                    <div class="achievement-year">2024</div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Hackathon Finalist</h3>
+                    <p>Innovation Competition</p>
+                    <div class="achievement-year">2023</div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cisco Cybersecurity</h3>
+                    <p>Network Security Certification</p>
+                    <div class="achievement-year">2023</div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>NPTEL DBMS</h3>
+                    <p>Database Management Systems</p>
+                    <div class="achievement-year">2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Let's Build Something Amazing</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p class="contact-description">
+                        I'm always excited to collaborate on innovative projects and explore new opportunities. 
+                        Whether you have a project in mind or just want to connect, I'd love to hear from you.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <a href="mailto:tejasai@example.com" class="contact-card email-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>tejasaiaa12@gmail.com</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chtejasai/" class="contact-card linkedin-card" target="_blank">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/chelimallatejasai/" class="contact-card github-card" target="_blank">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>View my code</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://leetcode.com/u/tejasai12/" class="contact-card leetcode-card" target="_blank">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>LeetCode</h3>
+                            <p>Coding challenges</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Chelimalla Tejasai. Crafted with passion and precision.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/chelimallatejasai/" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chtejasai/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/tejasai12" class="social-link"><i class="fab fa-code"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        
+        // Particle.js Configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#3b82f6' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#3b82f6',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Custom Cursor
+        const cursorDot = document.querySelector('[data-cursor-dot]');
+        const cursorOutline = document.querySelector('[data-cursor-outline]');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: 'forwards' });
+        });
+
+        // Typing Animation
+        const typingText = document.getElementById('typing-text');
+        const texts = [
+            'Backend Developer',
+            'Machine Learning Enthusiast',
+            'Problem Solver',
+            'Tech Innovator'
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeWriter() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typeSpeed = 1000;
+            }
+
+            setTimeout(typeWriter, typeSpeed);
+        }
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 200;
+                let current = 0;
+
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.ceil(current);
+                        setTimeout(updateCounter, 10);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Skill Bar Animation
+        function animateSkillBars() {
+            const skillItems = document.querySelectorAll('.skill-item');
+            skillItems.forEach(item => {
+                const skillLevel = item.getAttribute('data-skill');
+                const progressBar = item.querySelector('.skill-progress');
+                progressBar.style.width = skillLevel + '%';
+            });
+        }
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    
+                    // Trigger specific animations
+                    if (entry.target.classList.contains('hero')) {
+                        setTimeout(typeWriter, 1000);
+                        setTimeout(animateCounters, 2000);
+                    }
+                    
+                    if (entry.target.classList.contains('skills-card')) {
+                        setTimeout(animateSkillBars, 500);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.fade-in-up, .fade-in-right, .hero, .about-card, .project-card, .achievement-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile Navigation
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Parallax Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.hero-bg-animation');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
