@@ -7,7 +7,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-your-secret-ke
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['tejasai.onrender.com']
+ALLOWED_HOSTS = ['yourusername.pythonanywhere.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -80,6 +80,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
