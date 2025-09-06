@@ -3,9 +3,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-your-secret-key-here'
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-your-secret-key-here")
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['tejasai.onrender.com']
 
